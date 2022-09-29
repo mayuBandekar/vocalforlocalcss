@@ -1,0 +1,343 @@
+/* code of import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Montserrat' , 'sans-serif';
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    min-height: 80vh;
+}       
+
+/* code for left hand side panel */
+h1{
+    font-size: 5.25rem;
+    font-weight: 700;
+}
+
+/* to split screen  */
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    position: relative;
+    overflow: hidden;
+}
+
+.first .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container{
+    width: 100%;
+}
+
+.first {
+    background:
+    linear-gradient(to left top, rgb(158, 150, 197) 0%, rgba(70, 72, 187, 0.9) 50%, rgb(15, 16, 63) 100%),
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.first .social-container{
+    color: rgb(235, 247, 246);
+    text-align: left;
+    margin-left:100px;
+    margin-top: 12%;
+}
+
+/* css for top logo  */
+.top-logo{
+    display: flex;
+    flex-direction: row;
+}
+ 
+/* css for parachute image  */
+.para{
+    position: absolute;
+    top: 28%;
+    left: 26%;
+}
+
+.para img{
+    height: 35vh;
+}
+
+/* css code for get offer  */
+.get-offer{
+    margin-top: 13%;
+}
+
+.get-offer h1{
+    letter-spacing: 2px;
+}
+
+.get-offer span{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.get-offer p{
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 1.7rem;
+}
+
+/* code for button in first panel use code VFLFIRST */
+.button-code .btn{
+    border-radius: 2rem;
+    margin: 2px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background:
+    linear-gradient(to left top, rgb(82, 135, 233) 0%, rgb(26, 12, 116) 50%, rgb(12, 0, 90) 100%),
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    border: 1px solid rgb(119, 109, 184);
+}
+
+.button-code span{
+    font-size: .7rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* code for .additional-info in first panel  */
+.additional-info{
+    margin-top: 50px;
+}
+
+.additional-info p{
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 2.6rem;
+} 
+
+/* code to create background of second panel */
+.second {
+    background:
+        linear-gradient(to left top, rgb(255, 255, 255) 0%, rgba(119, 118, 187, 0.5) 50%, rgb(255, 255, 255) 100%),
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+        position: relative;
+}
+
+.second .circle{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    top: 73%;
+    left:60%;
+    width: 200px;
+    height: 200px;
+    background:
+        linear-gradient(to left top, #ffa4a4 0%, #f7b8b8 50%, #facece 100%),
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); 
+        border-radius: 50%;
+}
+
+/* code to create glass css in second panel  */
+.glass{
+    display: flex;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.774);
+    min-height: 66vh;
+    width: 41%;
+    top: 18%;
+    left: 46%;
+    z-index: 500;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+
+}
+
+.glass .content{
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+
+/* css for h1 login to account */
+.glass h1{
+    font-size: 2.2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(68, 53, 163);
+}
+
+.glass p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* code to create input field in second panel login form  */
+.input-field {
+    position: relative;
+    display: flex;
+    border-radius: 60px;
+    width: 36rem;
+    background: white;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.input-field .input{
+    position: relative;
+    top: 0;
+    left: 3.5rem;
+    bottom: 20px;
+    border: none;
+    padding: none;
+    width: 11rem;
+    padding: 20px;   
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 0px;
+}
+
+.input-field .icon{
+    position: relative;
+    top: 0rem;
+    left: 2.5rem;
+    font-size: 1.7rem;
+    color: #36aabe;
+}
+
+/* .email-field in login form */
+.email-field {
+    position: relative;
+    display: flex;
+    border-radius: 60px;
+    width: 36rem;
+    background: white;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.email-field .icon{
+    position: relative;
+    top: 0rem;
+    left: 2.5rem;
+    font-size: 1.7rem;
+    color: #36aabe;
+}
+.email-field .input{
+    position: relative;
+    top: 0;
+    left: 3.6rem;
+    bottom: 20px;
+    border: none;
+    padding: none;
+    width: 24rem;
+    padding: 20px;   
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 0px;
+}
+
+/* login button in login form  */
+.login-button{
+    position: relative;
+    display: flex;
+    border-radius: 60px;
+    width: 22rem;
+    background:linear-gradient(to right,   #00bceb, #7dd0db);
+    align-items: center;
+    margin-top: 30px;
+    left: 7rem;
+    border: 1px solid white;
+
+}
+.login-button .loginBtn{
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 19px 0;
+    transition: 0.4s;
+    position: relative;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+}
+ 
+/* new registration text  */
+.new-regi{
+    position: relative;
+    top: 7px;
+    left: 10rem;
+    width: 22rem;
+    margin-top: 30px;
+    color: white;
+}
+
+.new-regi strong{
+    font-weight: 900;
+    letter-spacing: 1px ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.new-regi span{
+    color: rgb(67, 110, 228);
+}
+
+/* css for color gradient for text get flat offer  */
+.get-offer .first{
+   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(46, 164, 168)), color-stop(0.25, rgb(106, 165, 184)), color-stop(0.4 , rgb(121, 172, 185)), color-stop(0.55, rgb(197, 226, 233)), color-stop(0.9, rgb(236, 240, 241)),color-stop(1, rgb(255, 255, 255))  );
+   background-image: gradient( linear, left top, right top, color-stop(0, rgb(46, 164, 168)), color-stop(0.15, rgb(76, 149, 172)), color-stop(0.3, rgb(67, 150, 170)), color-stop(0.45, rgb(146, 211, 228)), color-stop(0.45, rgb(146, 211, 228)),color-stop(0.45, rgb(146, 211, 228) ));
+   color:transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+  }
+
+  /* for 40% text color gradient  */
+.get-offer .second{
+background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(46, 164, 168)), color-stop(0.15, rgb(76, 149, 172)), color-stop(0.3, rgb(176, 176, 209)), color-stop(0.45, rgb(255, 255, 255)) );
+background-image: gradient( linear, left top, right top, color-stop(0, rgb(46, 164, 168)), color-stop(0.15, rgb(76, 149, 172)), color-stop(0.3, rgb(166, 166, 187)), color-stop(0.45, rgb(207, 218, 218)) );
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}
+ 
+/* to split screen  */
+@media screen and (min-width:900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .first , 
+    .second{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
